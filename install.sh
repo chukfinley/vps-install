@@ -1,7 +1,7 @@
 #/usr/bin/env bash
 cd
 echo "Updating"
-sudo apt update > /dev/null 2>&1 && 
+sudo apt update > /dev/null 2>&1
 echo "Upgrading this may take a while" 
 sudo apt upgrade -y > /dev/null 2>&1
 echo "Installing Packages this may take a while"
