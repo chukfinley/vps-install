@@ -1,7 +1,7 @@
 #/usr/bin/env bash
 cd
 echo "Updating"
-sudo apt update && sudo apt upgrade -y > /dev/null 2>&1
+sudo apt update > /dev/null 2>&1 && sudo apt upgrade -y > /dev/null 2>&1
 echo "Installing Packages"
 sudo apt install zsh zsh-syntax-highlighting zsh-autosuggestions yt-dlp btop thefuck python3-pip git cmake make gcc build-essential docker docker.io docker-compose tmux net-tools curl wget -y > /dev/null 2>&1
 echo "Setiing zsh as shell"
