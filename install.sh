@@ -40,4 +40,4 @@ echo -e "${GREEN}Restating sshd${RESET}"
 systemctl restart sshd
 echo -e "${GREEN}switching to zsh${RESET}"
 zsh
-echo -e "${GREEN}done${RESET}"
+echo -e "${GREEN}done!${RESET}"
