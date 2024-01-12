@@ -7,7 +7,7 @@ sudo apt update
 echo -e "${GREEN}Upgrading this may take a while${RESET}" 
 sudo apt upgrade -y
 echo -e "${GREEN}Installing Packages this may take a while${RESET}"
-sudo apt install zsh zsh-syntax-highlighting zsh-autosuggestions yt-dlp btop thefuck python3-pip git cmake make gcc build-essential docker docker.io docker-compose tmux net-tools curl wget -y
+sudo apt install zsh zsh-syntax-highlighting zsh-autosuggestions tree htop ncdu yt-dlp btop thefuck python3-pip git cmake make gcc build-essential docker docker.io docker-compose tmux net-tools curl wget -y
 echo -e "${GREEN}Setiing zsh as shell${RESET}"
 chsh -s $(which zsh) ${USER}
 echo -e "${GREEN}getting .zshrc${RESET}"
