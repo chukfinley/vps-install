@@ -34,7 +34,11 @@ fi
 if ! grep -q "^PrintLastLog no" /etc/ssh/sshd_config; then
     echo -e "PrintLastLog no" >> /etc/ssh/sshd_config
 fi
-
+#openssh port
+echo -e "${GREEN}Opening ssh port and enable ufw${RESET}"
+ufw allow openssh
+ufw allow 22
+ufw enable
 # Neustarten des SSH-Dienstes
 echo -e "${GREEN}Restating sshd${RESET}"
 systemctl restart sshd
